@@ -6,6 +6,11 @@ A Maven archetype that generates a pure Maven multi-module project template. It 
 ├── .editorconfig
 ├── .gitattributes
 ├── .gitignore
+├── .mvn
+│   └── wrapper
+│       └── maven-wrapper.properties
+├── mvnw
+├── mvnw.cmd
 └── pom.xml
 ```
 
