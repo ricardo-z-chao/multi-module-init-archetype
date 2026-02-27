@@ -4,4 +4,14 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.2.0 https://maven.apache.org/xsd/archetype-descriptor-1.2.0.xsd"
   name="multi-module-archetype-init">
+  <fileSets>
+    <fileSet filtered="false" packaged="false">
+      <directory></directory>
+      <includes>
+        <include>editorconfig.src</include>
+        <include>gitattributes.src</include>
+        <include>gitignore.src</include>
+      </includes>
+    </fileSet>
+  </fileSets>
 </archetype-descriptor>

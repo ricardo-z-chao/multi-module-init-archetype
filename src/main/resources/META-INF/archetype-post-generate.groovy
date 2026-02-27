@@ -12,3 +12,19 @@ if (versionParts[0] == "1" && versionParts.length > 1) {
 if (majorVersion < 9) {
   throw new IllegalArgumentException("Java version must be 9 or higher, got: ${javaVersion}")
 }
+
+def outputDir = new File(request.outputDirectory, request.artifactId)
+
+def renamedFiles = [
+  'editorconfig.src' : '.editorconfig',
+  'gitattributes.src': '.gitattributes',
+  'gitignore.src'    : '.gitignore'
+]
+
+renamedFiles.each { src, dest ->
+  def srcFile = new File(outputDir, src)
+  def destFile = new File(outputDir, dest)
+  if (srcFile.exists()) {
+    srcFile.renameTo(destFile)
+  }
+}
