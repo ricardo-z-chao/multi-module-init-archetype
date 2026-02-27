@@ -11,6 +11,9 @@
         <include>editorconfig.src</include>
         <include>gitattributes.src</include>
         <include>gitignore.src</include>
+        <include>.mvn/wrapper/maven-wrapper.properties</include>
+        <include>mvnw</include>
+        <include>mvnw.cmd</include>
       </includes>
     </fileSet>
   </fileSets>

@@ -28,3 +28,6 @@ renamedFiles.each { src, dest ->
     srcFile.renameTo(destFile)
   }
 }
+
+new File(outputDir, 'mvnw').setExecutable(true)
+new File(outputDir, 'mvnw.cmd').setExecutable(true)
