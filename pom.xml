@@ -6,6 +6,15 @@
   <version>1.0</version>
   <packaging>maven-archetype</packaging>
 
+  <url>https://github.com/ricardo-z-chao/multi-module-init-archetype.git</url>
+  <developers>
+    <developer>
+      <id>ricardo</id>
+      <name>ricardo.z.chao</name>
+      <email>ricardo.z.chao@gmail.com</email>
+    </developer>
+  </developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
