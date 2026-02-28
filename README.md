@@ -29,3 +29,9 @@ mvn -B archetype:generate \
 >
 > Java version must be 9 or higher.
 
+## Test
+
+```shell
+mvn clean verify
+```
+
