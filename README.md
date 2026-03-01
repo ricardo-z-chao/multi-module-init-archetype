@@ -17,12 +17,13 @@ A Maven archetype that generates a pure Maven multi-module project template. It 
 ## Usage
 
 ```shell
-mvn -B archetype:generate \
-  -DarchetypeGroupId=io.github.ricardo-z-chao \
+mvn -B archetype:generate                           \
+  -DarchetypeGroupId=io.github.ricardo-z-chao       \
   -DarchetypeArtifactId=multi-module-init-archetype \
-  -DgroupId=com.example.test \
-  -DartifactId=test-project \
-  -Dversion=1.0
+  -DarchetypeVersion=1.1.1                          \
+  -DgroupId=com.example.test                        \
+  -DartifactId=test-project                         \
+  -Dversion=1.0-SNAPSHOT
 ```
 
 > [!WARNING]

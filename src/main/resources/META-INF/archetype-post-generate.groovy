@@ -1,4 +1,4 @@
-def javaVersion = System.getProperty("java.version")
+def javaVersion = request.getProperties().getProperty("java.version", System.getProperty("java.version"))
 
 def versionParts = javaVersion.split(/[.\-_]/)
 def majorVersion
@@ -14,6 +14,11 @@ if (majorVersion < 9) {
 }
 
 def outputDir = new File(request.outputDirectory, request.artifactId)
+
+def pomFile = new File(outputDir, 'pom.xml')
+def pomContent = pomFile.text
+pomContent = pomContent.replace('${majorVersion}', majorVersion.toString())
+pomFile.text = pomContent
 
 def renamedFiles = [
   'editorconfig.src' : '.editorconfig',
