@@ -1,8 +1,23 @@
 target/
 out/
+application-local.yml
+TODO.md
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
 ### IntelliJ IDEA ###
 .idea
+!.idea/icon.png
+*.iws
+*.iml
+*.ipr
 
 ### VS Code ###
 .vscode
